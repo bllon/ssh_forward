@@ -1,0 +1,16 @@
+{
+  "ssh": {
+    "user": "",
+    "password": "",
+    "ssh_host": "",
+    "ssh_port": 22,
+    "local_host": "127.0.0.1",
+    "list": [
+      {
+        "local_port": 6379,
+        "remote_host": "",
+        "remote_port": 6379
+      }
+    ]
+  }
+}
