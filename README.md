@@ -1,9 +1,24 @@
 # ssh_forward
-ssh端口转发工具
+ssh端口转发工具2.0
 
-配置端口转发
-config.txt每行代表一个端口转发，例如
-用户名,密码,跳板机ip,22端口,本地端口,redis服务ip,redis服务端口
+配置端口转发config.json文件
+例如
+{
+  "ssh": {
+    "user": "用户名",
+    "password": "密码",
+    "ssh_host": "跳板机ip",
+    "ssh_port": 22,
+    "local_host": "127.0.0.1",
+    "list": [
+      {
+        "local_port": 6379,
+        "remote_host": "redis服务ip",
+        "remote_port": 6379
+      }
+    ]
+  }
+}
 
 启动
-dist/forward/forward.exe
+forward.exe
